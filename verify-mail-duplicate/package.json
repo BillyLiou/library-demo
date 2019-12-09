@@ -1,0 +1,21 @@
+{
+  "name": "verify-mail-duplicate",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14"
+  },
+  "main": "bundles/verify-mail-duplicate.umd.js",
+  "module": "fesm5/verify-mail-duplicate.js",
+  "es2015": "fesm2015/verify-mail-duplicate.js",
+  "esm5": "esm5/verify-mail-duplicate.js",
+  "esm2015": "esm2015/verify-mail-duplicate.js",
+  "fesm5": "fesm5/verify-mail-duplicate.js",
+  "fesm2015": "fesm2015/verify-mail-duplicate.js",
+  "typings": "verify-mail-duplicate.d.ts",
+  "metadata": "verify-mail-duplicate.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

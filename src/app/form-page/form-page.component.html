@@ -1,0 +1,26 @@
+<h3>表單驗證</h3>
+<form [formGroup]='form1'>
+  <!-- <label for="acc">帳號</label>
+  <input type="text" name="acc" id="" formControlName="acc">
+  <br> -->
+
+  <label for="pwd">密碼</label>
+  <input type="text" name="pwd" id="" formControlName="pwd" >
+  <span>errmessage : {{ this.form1.get('pwd').errors | json }}</span>
+  <br>
+
+  <label for="pwd2">確認密碼</label>
+  <input type="text" name="pwd2" id="" formControlName="pwd2" aaCompareEqual="pwd" >
+  <span>errmessage : {{ this.form1.get('pwd2').errors | json }}</span>
+  <br>
+
+  <label for="email">信箱</label>
+  <input type="text" name="email" id="" formControlName="email" aaValidMail>
+  <span>errmessage : {{ this.form1.get('email').errors | json }}</span>
+  <br>
+
+  <button [disabled]="!form1.valid" [ngStyle]="{'opacity': form1.valid?1:0.5}" >確認</button>
+  <button (click)="duplicateMail()">信箱是否重複</button>
+  <p #mailMes>{{ mailMessage }}</p>
+</form>
+
